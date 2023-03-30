@@ -11,6 +11,7 @@ intents:
   - mood_unhappy
   - select_car
   - detailed_car_selection
+  - current_car_info
 entities:
   - recording_start_action
   - recording_stop_action
@@ -24,6 +25,7 @@ actions:
   - action_ask_car_verification
   - action_car_selection
   - action_followup
+  - action_current_car
 
 forms:
   car_selection_form:

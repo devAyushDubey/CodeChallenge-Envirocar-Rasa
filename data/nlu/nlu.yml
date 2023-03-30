@@ -194,3 +194,15 @@ nlu:
     examples: |
       - what is envirocar?
       - envirocar
+  
+  - intent: current_car_info
+    examples: |
+      - my current car
+      - current car
+      - which is my current car?
+      - what is current car?
+      - what my current car name?
+      - tell me my current car
+      - please tell me what is my current car?
+      - what car is selected currently?
+      - which car have I selected?
