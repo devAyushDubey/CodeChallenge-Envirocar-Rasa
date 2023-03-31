@@ -43,8 +43,6 @@ class ActionAskCarNumber(Action):
             if metadata["isDashboardFragment"] and \
                     not metadata["car_selection_metadata"]["is_car_selection_fragment"]:
                 # if the user is on dashboard fragment, then navigate them to car selection screen
-                nav_to_car_selection_screen(
-                    dispatcher, message, intent)
                 return [ActiveLoop(None), SlotSet('car_number', None)]
             elif metadata["car_selection_metadata"]["is_car_selection_fragment"]:
                     # if the user is on car selection screen, start the form
