@@ -59,7 +59,7 @@ rules:
       - intent: add_car
       - action: car_addition_form
       - active_loop: car_addition_form
-
+      
   - rule: Say car name of currently selected car
     steps:
       - intent: current_car_info
