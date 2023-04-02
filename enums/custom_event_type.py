@@ -6,3 +6,4 @@ class CustomEventType(enum.Enum):
     RecordingRequirements = "RecordingRequirements"
     CarSelection = "CarSelection"
     NavigationScreens = "NavigationScreens"
+    CarAddition = "CarAddition"

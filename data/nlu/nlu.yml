@@ -116,6 +116,291 @@ nlu:
       - shut
       - shutdown
 
+  - intent: select_manufacturer
+    examples: |
+      - I'd like to select [bmw](manufacturer)
+      - I'd like to select my [bmw](manufacturer)
+      - I select [bmw](manufacturer)
+      - I want [bmw](manufacturer)
+      - can i select [bmw](manufacturer)
+      - I'm interested in selecting [bmw](manufacturer)
+      - I'm interested in choosing [bmw](manufacturer)
+      - I'm interested in picking [bmw](manufacturer)
+      - I'm interested in getting [bmw](manufacturer)
+      - I want to select [bmw](manufacturer)
+      - select [bmw](manufacturer)
+      - please select [bmw](manufacturer)
+
+
+  - lookup: manufacturer
+    examples: |
+      - bmw
+      - buessing
+      - daimler-benz
+      - dkw
+      - faun-werke
+      - barkas-veb
+      - rheinstahl hanomag
+      - borgward
+      - rheinstahl henschel
+      - hanomag-henschel
+      - krauss-maffei
+      - masch.f.a-nuernb-man
+      - opel
+      - neckar-automobilw.
+      - nsu-motorenwerke
+      - opel
+      - eisenacher mot.w-emw
+      - vidal & sohn
+      - victoria werke
+      - zuendapp-werke
+      - indust.karlsruhe-iwk
+      - kloeckner-h-deutz
+      - elektromasch.fulda
+      - friedrich- spatz-fzb.
+      - robur
+      - fz-ma-regensburg-fmr
+      - auwaerter- gottlob
+      - lloyd
+      - deutsche wag.u.m-dwm
+      - nordwestd.fahrzb-nwf
+      - goliath-werk
+      - maico-fahrzeugfabrik
+      - thurner
+      - tatra
+      - bmw motorsport
+      - porsche
+      - audi
+      - auto union
+      - audi nsu auto union
+      - heinkel- stuttgart
+      - glas
+      - volkswagen
+      - solo
+      - kaessbohrer
+      - mercedes-benz
+      - daimler-benz
+      - daimlerchrysler
+      - sachsenring
+      - automob-eisenach-awe
+      - ford
+      - daimlerchrysler
+      - chrysler
+      - ford
+      - general mot-gmc
+      - mitsubishi
+      - ford
+      - mazda
+      - diamond
+      - vdl bus
+      - avtovaz
+      - honda
+      - jeep eagle
+      - toyota
+      - honda turkiye
+      - otokar
+      - gumpert
+      - kia motors
+      - daimler
+      - nissan
+      - hyundai motor
+      - shuanghuan
+      - ktm-sportcar
+      - vdl bus & coach
+      - mitsubishi
+      - mercedes-amg
+      - tesla
+      - man truck & bus
+      - mia electric
+      - mclaren
+      - lada
+      - jiangling
+      - fisker
+      - jaguar land rover
+      - laz
+      - meier
+      - suzuki
+      - fca
+      - fca italy
+      - ktm sportcar
+      - sileo
+      - mg motor
+      - alfa romeo
+      - general motors
+      - ford
+      - bluecar
+      - subaru
+      - opel automobile
+      - kia motors
+      - tcv
+      - audi sport
+      - italdesign-giugiaro
+      - beijing borgward 
+      - dallara
+      - psa automobiles
+      - cami
+      - renault
+      - austin
+      - rolls-royce
+      - westfield
+      - ldv
+      - ford
+      - london ev company
+      - leyland
+      - jaguar
+      - morris
+      - rover
+      - vauxhall
+      - talbot motor
+      - chrysler
+      - bentley
+      - land rover
+      - austin rover
+      - nissan
+      - general motors
+      - ibc vehicles
+      - toyota
+      - honda
+      - land rover group
+      - mg rover
+      - land rover
+      - bl cars
+      - hireus
+      - rolls-royce mc
+      - bugatti
+      - citroen
+      - peugeot
+      - alpine
+      - sovab
+      - acma
+      - saviem
+      - talbot automob.
+      - chrysler
+      - simca
+      - matra
+      - nissan europe
+      - renault
+      - alfa romeo
+      - fiat
+      - lanci
+      - autobianchi
+      - siata
+      - maserati
+      - ferrari
+      - fiat lancia
+      - lamborghini
+      - osi
+      - alfaromeo alfasud
+      - leyland-innocenti
+      - nuova-innocenti
+      - bertone
+      - pininfarina
+      - alfa lancia
+      - fiat
+      - iveco
+      - mazda
+      - toyota europe
+      - volvo
+      - saab europe
+      - toyota mem
+      - mercedes-b.tuerk
+      - temsa 
+      - hyundai
+      - anadolu isuzu
+      - steyr-d-puch
+      - ktm
+      - gelaendef.ges-gfg
+      - berliner-verk.b-bvg
+      - rh.automobilfab.-raf
+      - regensburger-st.-rsm
+      - mcc
+      - honda motor
+      - suzuki
+      - toyota
+      - nissan
+      - fuji heavy ind.
+      - mitsubishi
+      - toyo kogyo
+      - daihatsu
+      - isuzu
+      - mazda
+      - proton
+      - mitsubishi
+      - honda
+      - n.m.i.s.a.
+      - general motors
+      - ford
+      - motor iberica
+      - seat
+      - chrysler
+      - mercedes-benz
+      - nissan
+      - santana
+      - alpina
+      - man nutzfahrzeuge
+      - melkus
+      - barkas
+      - arge audi/porsche
+      - bmw m
+      - evobus
+      - quattro
+      - aznp-skoda
+      - skoda
+      - karosa
+      - liaz
+      - zastava
+      - uap
+      - uzina mecanica
+      - intreprinderea
+      - oltcit
+      - dacia
+      - ssangyong
+      - hyundai motor
+      - kia motor
+      - daewoo
+      - hyundai prec.
+      - gm daewoo
+      - gm korea
+      - ikarus
+      - magyar suzuki
+      - audi
+      - maruti
+      - hyundai motor
+      - tata eng.
+      - ford
+      - rewaco
+      - mcc smart
+      - volvo
+      - saab
+      - saab-scania
+      - saab automobile
+      - scania
+      - fso
+      - fsm
+      - fsc
+      - solaris
+      - gas
+      - wolga-autow.-vaz/rus
+      - uaz
+      - azlk moskau
+      - sas
+      - rybinsk v.f.m.
+      - riga automobilw.
+      - lwow autobusw.
+      - pawlowsk
+      - saab valmet
+      - ford
+      - volvo
+      - netherlands car
+      - nissan europe
+      - van doorne-daf
+      - daf
+      - bova
+      - mitsubishi
+      - neoplan bus
+      - smart
+
+      
   - intent: select_car
     examples: |
       - i'd like to select a car
@@ -206,3 +491,27 @@ nlu:
       - please tell me what is my current car?
       - what car is selected currently?
       - which car have I selected?
+      
+  - intent: add_car
+    examples: |
+      - i'd like to add a car
+      - i'd like to add a new car
+      - i'd like to add my car
+      - i add a car
+      - can i add a car
+      - can i add a new car
+      - I'm interested in adding a car
+      - I'm interested in adding a new car
+      - i want to add a car
+      - i want to add a new car
+      - add a car
+      - add a new car
+      - please add a car
+      - please add a new car
+
+
+  - synonym: add
+    examples: |
+      - put
+      - create
+      - attach

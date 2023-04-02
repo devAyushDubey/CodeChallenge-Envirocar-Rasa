@@ -9,13 +9,16 @@ intents:
   - main_ui_recording
   - mood_great
   - mood_unhappy
+  - select_manufacturer
   - select_car
+  - add_car
   - detailed_car_selection
   - current_car_info
 entities:
   - recording_start_action
   - recording_stop_action
   - car_selection_number
+  - manufacturer
 actions:
   - action_start_recording
   - action_stop_recording
@@ -26,12 +29,20 @@ actions:
   - action_car_selection
   - action_followup
   - action_current_car
+  - action_ask_car_manufacturer
+  - validate_car_addition_form
+
 
 forms:
   car_selection_form:
     required_slots:
       - car_number
       - car_verification
+  car_addition_form:
+    required_slots:
+      - car_manufacturer
+      - car_verification
+  
 
 slots:
   is_dashboard_fragment:
@@ -135,6 +146,17 @@ slots:
         conditions:
           - active_loop: car_selection_form
             requested_slot: car_verification
+          - active_loop: car_addition_form
+            requested_slot: car_verification
+  car_manufacturer:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: manufacturer
+        conditions:
+          - active_loop: car_addition_form
+            requested_slot: car_manufacturer
 responses:
   utter_greet:
     - text: Hey! How are you?

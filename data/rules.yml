@@ -54,6 +54,12 @@ rules:
           - requested_slot: null
       - action: action_car_selection
   
+  - rule: Activate car addition form
+    steps:
+      - intent: add_car
+      - action: car_addition_form
+      - active_loop: car_addition_form
+      
   - rule: Say car name of currently selected car
     steps:
       - intent: current_car_info
